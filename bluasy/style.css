@@ -1,0 +1,631 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* fin rest css */
+
+body{
+    background-image: url('image/img1.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'poppins';
+    font-size: 17px;
+}
+
+/* MENU DE NAVIGATION */
+
+header{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 70px;
+    background: rgba(59, 59, 59, 0.794);
+    height: 56px;
+    color: white;
+    border-bottom: 1px solid black;
+    z-index: 7;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+}
+
+.logo span{
+    color: lightskyblue;
+}
+
+.anim-nav{
+    background: rgb(97, 97, 97);
+    height: 75px;
+    color: white;
+    border-bottom: 1px solid black;
+    z-index: 7;
+}
+
+.nav-area{
+    list-style: none;
+}
+
+.nav-area li{
+    display: inline-block;
+    padding: 0 17px;
+    text-transform: uppercase;
+}
+
+.nav-area li a{
+    color: white;
+    transition: 0.7s;
+}
+
+.nav-area li a.active{
+    border: 3px solid lightskyblue;
+    padding: 7px;
+    color: lightskyblue;
+}
+
+/* SERVICES */
+
+.section-service{
+    position: absolute;
+    margin-top: 41.2%;
+    padding: 40px 70px;
+    background: lightskyblue;
+    width: 100%;
+    height: 77%;
+    color: white;
+    font-weight: 300;
+}
+
+.section-service .content-title{
+    position: relative;
+    font-weight: 400;
+}
+
+.section-service .content-title:before{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    top: 40px;
+}
+
+
+.section-portfolio .content-element{
+       
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1300px;
+    margin: 70px auto 0;
+}
+
+.section-portfolio .content-element .item{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.section-service .content-element{
+    position: relative;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-element .content-one span .fa-mug-hot,
+.content-element .content-two span .fa-print, 
+.content-element .content-three span .fa-satellite-dish,
+.content-element .content-four span .fa-photo-video{
+    margin: 5px;
+    font-size: 45px;
+}
+
+
+.content-element .content-one h2,
+.content-element .content-two h2, 
+.content-element .content-three h2,
+.content-element .content-four h2{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.content-element .content-one .text-one,
+.content-element .content-two .text-two, 
+.content-element .content-three .text-three,
+.content-element .content-four .text-four{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* PORTFOLIO */
+.section-portfolio{
+    position: absolute;
+    margin-top: 76%;
+    padding: 40px 70px;
+    background: white;
+    width: 100%;
+    height: 77%;
+    color: white;
+    font-weight: 300;
+}
+
+.title-portfolio{
+    position: relative;
+    font-weight: 400;
+    color: black;
+}
+
+.title-portfolio:before{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    top: 40px;
+}
+
+.header-portfolio{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 70px;
+    color: black;
+    z-index: 7;
+    font-weight: 400;
+}
+
+.nav-portfolio{
+    list-style: none;
+}
+
+.nav-portfolio li{
+    display: inline-block;
+    padding: 0 17px;
+    text-transform: uppercase;
+}
+
+.nav-portfolio li a{
+    color: black;
+    transition: 0.7s;
+}
+
+.nav-portfolio li a.active{
+    border: 3px solid lightskyblue;
+    padding: 11px;
+    color: lightskyblue;
+}
+
+/* ------------- gallerie photo -------------- */
+.section-portfolio .gallery{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1300px;
+    margin: 70px auto 0;
+}
+
+.section-portfolio .gallery .item{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.section-portfolio .gallery .item img{
+    width: 100%;
+    height: auto;
+}
+
+/* SECTION VIDEO */
+.section-video{
+    position: absolute;
+    margin-top: 146%;
+    padding: 40px 70px;
+    background: rgb(71, 70, 70);
+    width: 100%;
+    height: 82%;
+    color: white;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+
+.section-video .part-one .title-video{
+    position: relative;
+    margin-top: 5%;
+    font-weight: 400;
+    color: white;
+}
+
+.section-video .part-one .title-video:before{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    top: 40px;
+}
+
+.section-video .part-one .text-video{
+    width: 65%;
+    margin-top: 7%;
+}
+
+.section-video .part-one .button-visit{
+    background: none;
+    border: 3px solid
+     black;
+    border-radius: 5px;
+    color: black;
+    width: 125px;
+    height: 45px;
+    font-weight: 700;
+    margin-top: 4%;
+}
+
+.section-video .part-two{
+    margin-top: 9%;
+}
+
+.section-video .part-two video{
+    height: 75%;
+}
+
+
+/* SECTION TWITTER */
+.section-social{
+    position: absolute;
+    margin-top: 184%;
+    padding: 40px 70px;
+    background: lightskyblue;
+    width: 100%;
+    height: 42%;
+    color: white;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+
+.section-social .part-twitter .title-social{
+    position: relative;
+    margin-top: 4%;
+    font-weight: 400;
+    color: white;
+}
+
+.section-social .part-twitter .title-social:before{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    top: 40px;
+}
+
+.section-social .part-twitter .text-social{
+    margin-top: 4%;
+    width: 75%;
+}
+
+.section-social .part-twitter .text-social span{
+    font-weight: 700;
+}
+
+
+.section-social .icon{
+    margin-top: 27px;
+    font-size: 45px;
+    color: white;
+}
+
+/* SECTION PERSON */
+.section-person{
+    position: absolute;
+    margin-top: 203%;
+    padding: 40px 70px;
+    background: url('./image/img4.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 72%;
+    color: white;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+
+.section-person .part-person{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+}
+
+.part-person .part-person-one .title-person{
+    position: relative;
+    margin-top: 4%;
+    font-weight: 400;
+    color: white;
+}
+
+.part-person .part-person-one .title-person:before{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    top: 40px;
+}
+
+.part-person .part-person-one .text-person{
+    margin-top: 4%;
+    width: 95%;   
+}
+
+.part-person .part-person-two{
+    margin-top: 7.5%;   
+}
+
+.part-person .part-person-two .text-person{
+    margin-left: 17%;
+    width: 95%;
+}
+
+.part-person .part-person-two .icon-social{
+    margin-left: 15%;
+    margin-top: 7%;
+}
+
+.part-person .part-person-two .icon-social .fa-twitter,
+.part-person .part-person-two .icon-social .fa-google-plus-g,
+.part-person .part-person-two .icon-social .fa-globe,
+.part-person .part-person-two .icon-social .fa-mug-hot{
+    font-size: 20px;
+    margin: 7px;
+    border: 5px solid white;
+    padding: 10px;
+}
+
+/* SECTION TESTIMONIALS */
+.section-testimonials{
+    position: absolute;
+    margin-top: 236.5%;
+    padding: 40px 70px;
+    background: white;
+    width: 100%;
+    height: 46%;
+    color: black;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+
+.section-testimonials .part-testimonials .title-testimonials{
+    position: relative;
+    margin-top: 4%;
+    font-weight: 400;
+    color: black;
+}
+
+.section-testimonials .part-testimonials .title-testimonials:before{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    top: 40px;
+}
+
+.section-testimonials .part-testimonials .text-testimonials{
+    margin-top: 4%;
+    width: 75%;
+}
+
+.section-testimonials .part-testimonials span{
+    font-weight: 600;
+    color: lightskyblue;
+}
+
+
+.section-testimonials .icon{
+    margin-top: 27px;
+    font-size: 45px;
+    color: black;
+}
+
+/* SECTION CONTACT */
+.section-contact{
+    position: absolute;
+    margin-top: 262%;
+    padding: 0 70px;
+    background: url('./image/img5.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 117vh;
+    color: black;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.section-contact .title-contact{
+    position: relative;
+    margin-top: 2%;
+    font-weight: 400;
+    color: white;
+}
+
+.section-contact .title-contact:before{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    top: 40px;
+}
+
+.section-contact .form-contact{
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+    /* margin-left: -7%; */
+}
+
+.section-contact .form-contact .name-contact label{
+    position: absolute;
+    margin-top: -4px;
+    margin-left: -4%;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.section-contact .form-contact .name-contact input{
+    position: absolute;
+    background: none;
+    border: 3px solid white;
+    width: 470px;
+    height: 45px;
+    margin-top: 32px;
+    margin-left: -55px;
+}
+
+.section-contact .form-contact .email-contact{
+    margin-top: -17px;
+}
+
+.section-contact .form-contact .email-contact label{
+    position: absolute;
+    margin-top: 127px;
+    margin-left: -4%;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.section-contact .form-contact .email-contact input{
+    position: absolute;
+    background: none;
+    border: 3px solid white;
+    width: 470px;
+    height: 45px;
+    margin-top: 162px;
+    margin-left: -55px;
+}
+
+.section-contact .form-contact .message-contact{
+    position: absolute;
+    margin-left: -110px;
+    margin-top: 19%;
+}
+
+.section-contact .form-contact .message-contact label{
+    position: absolute;
+    margin-top: -37px;
+    margin-left: -63%;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.section-contact .form-contact .message-contact textarea{
+    position: absolute;
+    background: none;
+    border: 3px solid white;
+    width: 1200px;
+    height: 235px;
+    margin-top: 21%;
+    margin-left: -63%;
+}
+
+.section-contact .form-contact .button-submit{
+    position: absolute;
+    margin-top: 37%;
+    margin-left: 12%;
+    background: lightskyblue;
+    width: 20%;
+    height: 55px;
+    color: white;
+    font-weight: 550;
+    border: 5px solid lightskyblue;
+}
+
+.section-contact .text-contact{
+    position: relative;
+    margin-top: 10%;
+    margin-left: 50%;
+}
+
+.section-contact .text-contact .text-contact-one{
+    color: white;
+    font-size: 15px;
+    width: 90%;
+}
+
+.section-contact .text-contact .text-contact-two{
+    position: relative;
+    margin-top: -11%;
+}
+
+.section-contact .text-contact .text-contact-two span{
+    display: inline-block;
+    width: 60%;
+    color: white;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: 317%;
+    padding: 0 25px;
+    background: rgb(82, 82, 82);
+    color: lightgray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    z-index: 55;
+}
+
+footer .menu-footer, footer .copyright{
+    margin: 125px;
+}
