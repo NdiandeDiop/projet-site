@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulaire d'envoi</title>
+	<meta charset="utf-8">
+	<!-- --------javascript-------- -->
+	 <script
+          src="https://code.jquery.com/jquery-2.2.4.min.js"
+          integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+          crossorigin="anonymous">
+      </script>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script>
+          function sendmail(){
+              var name = $('#name').val();
+              var surname = $('#Surname').val();
+              var tel = $('#Tel').val();
+              var email = $('#mail').val();
+           var message = $('#Message').val();
+           
+           var Body='Name:'+name+'<br>Surname:'+surname+'<br>Email:'+email+'<br>Tel:'+tel+'<br>Message:'+message;
+           Email.send({
+        SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+				To: 'nenenianza747@gmail.com',
+				From: "mozzzzzz@gmail.com",
+				Subject: "New message on contact from "+name,
+				Body: Body
+			}).then(
+				message =>{
+					//console.log (message);
+					if(message=='OK'){
+					alert('Your mail has been send. Thank you for connecting.');
+					}
+					else{
+						console.error (message);
+						alert('There is error at sending message. ')
+						
+					}
+
+				}
+			);
+
+          }
+      </script>  
+     </script> 
+     <!-- --------- css------- -->
+	<style type="text/css">
+		form{
+     width: 30%;
+      background-color: rgba(220,220,0,0.2);
+      padding : 5px 0px;
+
+}
+.c100{
+ width: 100%;
+ margin: 20px;
+}
+label{
+ display: inline-block;
+ min-width: 25%;
+}
+input[type="submit"]{
+ color: RGB(200,100,0);
+ border-radius: 5px;
+ padding: 5px 10px;
+ font-size: 14px;
+ border: 2px solid RGB(200,100,0);
+}
+input[type="submit"]:hover{
+ background-color: RGB(200,100,0);
+ color: #fff;
+ cursor: pointer;
+ box-shadow: 0px 0px 5px 0px #777;
+}
+	</style>
+</head>
+          <!-- parti html -->
+<body>
+
+<h1>Formulaire HTML</h1>
+ 
+ <form action="javascript:sendmail()" method="post">
+ <div class="c100">
+ <label for="prenom">Prénom:</label>
+ <input type="text" id="name" name="prenom">
+ </div>
+ <div class="c100">
+ <label for="prenom">Nom:</label>
+ <input type="text" id="surname" name="surname">
+ </div>
+ <div class="c100">
+ <label for="mail">Email:</label>
+ <input type="email" id="mail" name="mail">
+ </div>
+ <div class="c100">
+ <label for="number">tel:</label>
+ <input type="number" id="number" name="number">
+ </div>
+ <textarea rows="8" name = "message" id="Message" placeholder="send message" required></textarea>
+ <div class="c100" id="submit">
+ <input type="submit" value="Envoyer"></a>
+ </div>
+ </form>
+
+</body>
+</html>
